@@ -1,0 +1,242 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    width: 100%;
+    height: 100vh;
+    font-family: 'Ubuntu', sans-serif;
+    background: #212121;;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+/* -----------------HEADER ----------------*/
+
+.nav{
+    display: grid;
+    grid-template-columns: 33% 67%;
+    background-color: black;
+    color: white;
+}
+
+.logo{
+    margin: 1rem;
+    padding-left: 1rem;
+}
+
+.empresas{
+    margin: 1rem;
+    display: flex;
+    gap: 2rem;
+}
+
+/* --------------SWIPER ------------------*/
+
+.swiper {
+    width: 100%;
+    height: 50%;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* --------------- SOBRE ------------------*/
+
+.Sobre{
+    margin: 0.8rem;
+    color: white;
+}
+
+.texto-sobre>p{
+    text-align: justify;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+
+.img{
+    display: none;
+}
+
+/* -----------------SERVIÇOS ---------------------*/
+
+.servicos{
+    background-color: white;
+}
+
+.titulo-servicos{
+    padding-left: 0.9rem;
+    padding-top: 1rem;
+    color: black;
+}
+
+.card2 {
+    width: 300px;
+    height: 150px;
+    border-radius: 20%;
+    background: white;
+    border-radius: 10px;
+    transition: border-radius 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+   
+.shadow {
+    box-shadow: inset 0 -3em 3em rgba(0,0,0,0.1),
+                0 0  0 2px rgb(190, 190, 190),
+                0.3em 0.3em 1em rgba(0,0,0,0.3);
+}
+
+/* --------------PERGUNTAS FREQUENTES ----------------*/
+
+.container-perguntas{
+    background-color: white;
+    color: black;
+}
+
+.perguntas {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+  
+.border {
+    border: 1px solid black;
+    border-radius: 20px;
+    padding: 1rem;
+    width: 300px;
+} 
+    
+.accordion-button {
+    display: block;
+    width: 100%;
+    border: 0;
+    cursor: pointer;
+    background-color: transparent;
+    padding: 8px 16px;
+    margin-top: 16px;
+}
+  
+.accordion-content {
+    overflow: hidden;
+    -webkit-transition: 1s ease;
+    transition: 1s ease;
+}
+
+/* ---------------PRODUTOS --------------*/
+.titulo{
+    padding-left: 1.1rem;
+    padding-top: 1rem;
+    color: rgb(144, 140, 140);
+}
+
+.container-card{
+    margin-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.card {
+    width: 300px;
+    height: 300px;
+    border-radius: 30px;
+    background: #212121;
+    box-shadow: 15px 15px 30px rgb(25, 25, 25),
+                -15px -15px 30px rgb(60, 60, 60);
+}
+
+.imagem-produtos{
+    width: 300px;
+    height: 190px;
+}
+
+.descricao{
+    padding-left: 0.5rem;
+    color: white;
+}
+
+
+
+@media (min-width: 1024px) {
+    .Sobre{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        align-items: center;
+        margin: 0.8rem;
+    }
+    
+    .Sobre>p{
+        text-align: justify;
+        margin-top: 0.5rem;
+    }
+
+    .img{
+        display: block;
+        margin-left: 2rem;
+    }
+    
+    .img-sobre{
+        width: 300px;
+        align-items: center;
+    }
+
+    .container-perguntas{
+        background-color: white;
+        color: black;
+    }
+    
+    .perguntas {
+        padding: 1rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+      
+    .border {
+        border: 1px solid black;
+        border-radius: 20px;
+        padding: 1rem;
+        width: 500px;
+    } 
+        
+    .accordion-button {
+        display: block;
+        width: 100%;
+        border: 0;
+        cursor: pointer;
+        background-color: transparent;
+        padding: 8px 16px;
+        margin-top: 16px;
+    }
+      
+    .accordion-content {
+        overflow: hidden;
+        -webkit-transition: 1s ease;
+        transition: 1s ease;
+    }
+
+}
+   
+   

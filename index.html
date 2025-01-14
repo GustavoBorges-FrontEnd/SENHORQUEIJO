@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Senhor Queijo</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+</head>
+<body>
+    <header class="nav">
+        <div class="logo">
+            Logo
+        </div>
+        <nav class="empresas">
+            <a href="#">Empresa1</a>
+            <a href="#">Empresa2</a>
+        </nav>
+    </header>
+
+    <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="Assets/imagem.png" alt="">
+          </div>
+          <div class="swiper-slide">
+            <img src="Assets/imagem.png" alt="">
+          </div>
+          <div class="swiper-slide">
+            <img src="Assets/imagem.png" alt="">
+          </div>
+          <div class="swiper-slide">
+            <img src="Assets/imagem.png" alt="">
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>    
+
+    <div class="Sobre" data-aos="fade-left" data-aos-duration="1000">
+        <div class="texto-sobre">
+            <div>
+                <h1>SOBRE</h1>
+            </div>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas pariatur nam quidem eaque fugit nihil aliquid a iure, consectetur nulla. Est itaque laudantium ex alias esse enim asperiores nisi sapiente. Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus quo officiis, est totam maiores magni excepturi recusandae similique alias, reiciendis reprehenderit aperiam nesciunt iusto optio nemo fugiat molestias itaque dolorum?</p>
+        </div>
+        <div class="img">
+            <img class="img-sobre" src="Assets/imagem.png" alt="">
+        </div>
+    </div>
+
+    <div class="servicos" data-aos="fade-down" data-aos-duration="1000">
+        <h1 class="titulo-servicos">NOSSOS SERVIÇOS</h1>
+        <div class="container-card">
+            <div class="card2 shadow" data-aos="fade-right" data-aos-duration="1000">
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio, odio libero, sed dolorem eos iusto saepe iure ducimus laboriosam impedit, voluptatum labore assumenda voluptatem accusantium. In nam delectus ullam tempora.</p>
+            </div>
+            <div class="card2 shadow" data-aos="fade-left" data-aos-duration="1000">
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio, odio libero, sed dolorem eos iusto saepe iure ducimus laboriosam impedit, voluptatum labore assumenda voluptatem accusantium. In nam delectus ullam tempora.</p>
+            </div>
+            <div class="card2 shadow" data-aos="fade-right" data-aos-duration="1000">
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio, odio libero, sed dolorem eos iusto saepe iure ducimus laboriosam impedit, voluptatum labore assumenda voluptatem accusantium. In nam delectus ullam tempora.</p>
+            </div>
+            <div class="card2 shadow" data-aos="fade-left" data-aos-duration="1000">
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio, odio libero, sed dolorem eos iusto saepe iure ducimus laboriosam impedit, voluptatum labore assumenda voluptatem accusantium. In nam delectus ullam tempora.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-perguntas" data-aos="fade-up" data-aos-duration="1000">
+        <h1 class="titulo-servicos">PERGUNTAS FREQUENTES</h1>
+        <div class="perguntas">
+            <div class="border">
+                <button type="button" class="accordion-button">
+                    <h4>Primeiro Item</h4>
+                </button>
+                <div class="accordion-content">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur
+                        adipisicing elit. Praesentium quidem
+                        adipisci eveniet iusto dolorum cumque
+                        quod atque? Sed doloremque iste beatae
+                        mollitia, ullam reiciendis eligendi
+                        praesentium maxime cumque quo impedit!
+                    </p>
+                </div>
+            </div>
+            <div class="border">
+                <button type="button" class="accordion-button">
+                    <h4>Segundo Item</h4>
+                </button>
+                <div class="accordion-content ">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur
+                        adipisicing elit. Praesentium quidem
+                        adipisci eveniet iusto dolorum cumque
+                        quod atque? Sed doloremque iste beatae
+                        mollitia, ullam reiciendis eligendi
+                        praesentium maxime cumque quo impedit!
+                    </p>
+                </div>
+            </div>
+            <div class="border">
+                <button type="button" class="accordion-button">
+                    <h4>Terceiro Item</h4>
+                </button>
+                <div class="accordion-content">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur
+                        adipisicing elit. Praesentium quidem
+                        adipisci eveniet iusto dolorum cumque
+                        quod atque? Sed doloremque iste beatae
+                        mollitia, ullam reiciendis eligendi
+                        praesentium maxime cumque quo impedit!
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="produtos" data-aos="fade-up" data-aos-duration="1000">
+        <h1 class="titulo">PRODUTOS</h1>
+        <button onclick="filtrarProdutos('todos')">Todos os Produtos</button>
+        <button onclick="filtrarProdutos('queijo')">Queijos</button>
+        <button onclick="filtrarProdutos('carne')">Carnes</button>
+        <div class="container-card">
+            <div class="card" data-categoria="queijo" data-aos="fade-right" data-aos-duration="1000">
+                <img class="imagem-produtos" src="Assets/imagem.png" alt="">
+                <h2 class="descricao">Queijo1</h2>
+                <p class="descricao">Descrição</p>
+            </div>
+            <div class="card" data-categoria="carne" data-aos="fade-left" data-aos-duration="1000">
+                <img class="imagem-produtos" src="Assets/imagem.png" alt="">
+                <h2 class="descricao">Carne1</h2>
+                <p class="descricao">Descrição</p>
+            </div>
+            <div class="card" data-aos="fade-right" data-aos-duration="1000">
+                <img class="imagem-produtos" src="Assets/imagem.png" alt="">
+                <h2 class="descricao">Nome</h2>
+                <p class="descricao">Descrição</p>
+            </div>
+            <div class="card" data-aos="fade-left" data-aos-duration="1000">
+                <img class="imagem-produtos" src="Assets/imagem.png" alt="">
+                <h2 class="descricao">Nome</h2>
+                <p class="descricao">Descrição</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="js/swiper.js"></script>
+    <script src="js/perguntas.js"></script>
+    <script src="js/filter.js"></script>
+    
+    
+
+</body>
+</html>
