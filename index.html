@@ -14,10 +14,25 @@
         <div class="logo">
             Logo
         </div>
-        <nav class="empresas">
-            <a href="#">Empresa1</a>
-            <a href="#">Empresa2</a>
-        </nav>
+        <div class="menu">
+            <label class="hamburger">
+                <input type="checkbox" id="menuToggle">
+                <svg viewBox="0 0 32 32">
+                    <path class="line line-top-bottom"
+                        d="M27 10 13 10C10.8 10 9 8.2 9 6 9 3.5 10.8 2 13 2 15.2 2 17 3.8 17 6L17 26C17 28.2 18.8 30 21 30 23.2 30 25 28.2 25 26 25 23.8 23.2 22 21 22L7 22">
+                    </path>
+                    <path class="line" d="M7 16 27 16"></path>
+                </svg>
+            </label>
+        </div>
+        <div class="menu-aberto">
+            <nav class="nav-menu">
+                <a href="#">Empresa 1</a>
+                <a href="#">Empresa 2</a>
+                <a href="#">Fale Conosco</a>
+            </nav>
+        </div>
+    </header>
     </header>
 
     <div class="swiper mySwiper">
@@ -68,15 +83,15 @@
         </div>
     </div>
 
-    <div class="container-perguntas" data-aos="fade-up" data-aos-duration="1000">
+    <div class="servicos" data-aos="fade-up" data-aos-duration="1000">
         <h1 class="titulo-servicos">PERGUNTAS FREQUENTES</h1>
         <div class="perguntas">
             <div class="border">
                 <button type="button" class="accordion-button">
-                    <h4>Primeiro Item</h4>
+                    <h4 class="texto-perguntas">Primeiro Item</h4>
                 </button>
                 <div class="accordion-content">
-                    <p>
+                    <p class="texto-perguntas">
                         Lorem ipsum dolor sit amet consectetur
                         adipisicing elit. Praesentium quidem
                         adipisci eveniet iusto dolorum cumque
@@ -88,10 +103,10 @@
             </div>
             <div class="border">
                 <button type="button" class="accordion-button">
-                    <h4>Segundo Item</h4>
+                    <h4 class="texto-perguntas">Segundo Item</h4>
                 </button>
                 <div class="accordion-content ">
-                    <p>
+                    <p class="texto-perguntas">
                         Lorem ipsum dolor sit amet consectetur
                         adipisicing elit. Praesentium quidem
                         adipisci eveniet iusto dolorum cumque
@@ -103,10 +118,10 @@
             </div>
             <div class="border">
                 <button type="button" class="accordion-button">
-                    <h4>Terceiro Item</h4>
+                    <h4 class="texto-perguntas">Terceiro Item</h4>
                 </button>
                 <div class="accordion-content">
-                    <p>
+                    <p class="texto-perguntas">
                         Lorem ipsum dolor sit amet consectetur
                         adipisicing elit. Praesentium quidem
                         adipisci eveniet iusto dolorum cumque
@@ -121,9 +136,9 @@
 
     <div class="produtos" data-aos="fade-up" data-aos-duration="1000">
         <h1 class="titulo">PRODUTOS</h1>
-        <button onclick="filtrarProdutos('todos')">Todos os Produtos</button>
-        <button onclick="filtrarProdutos('queijo')">Queijos</button>
-        <button onclick="filtrarProdutos('carne')">Carnes</button>
+        <button class="btnfilter space" onclick="filtrarProdutos('todos')">Todos os Produtos</button>
+        <button class="btnfilter" onclick="filtrarProdutos('queijo')">Queijos</button>
+        <button class="btnfilter" onclick="filtrarProdutos('carne')">Carnes</button>
         <div class="container-card">
             <div class="card" data-categoria="queijo" data-aos="fade-right" data-aos-duration="1000">
                 <img class="imagem-produtos" src="Assets/imagem.png" alt="">
@@ -158,6 +173,7 @@
     <script src="js/swiper.js"></script>
     <script src="js/perguntas.js"></script>
     <script src="js/filter.js"></script>
+    <script src="js/menu.js"></script>
     
     
 
