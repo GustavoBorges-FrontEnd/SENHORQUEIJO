@@ -27,16 +27,17 @@
             </label>
         </div>
         <div class="menu-aberto">
-            <nav class="nav-menu">
-                <a href="#">Empresa 1</a>
-                <a href="#">Empresa 2</a>
-                <a href="#">Fale Conosco</a>
+            <nav class="nav-menu hidden" id="menu">
+                <a href="#section1">SOBRE</a>
+                <a href="#section2">NOSSOS SERVIÇOS</a>
+                <a href="#section3">PERGUNTAS FREQUENTES</a>
+                <a href="#section4">PRODUTOS</a>
+                <a href="#section5">CONTATO</a>
             </nav>
         </div>
     </header>
-    </header>
 
-    <div class="swiper mySwiper">
+    <div class="swiper mySwiper" id="section1">
         <div class="swiper-wrapper">
           <div class="swiper-slide">
             <img src="Assets/swipper3.png" alt="">
@@ -64,13 +65,13 @@
             <p class="paragrafosegundo"><strong>Nosso diferencial está no rigoroso controle de qualidade e na transparência em todas as etapas do processo.</strong> Contamos com uma equipe qualificada para garantir entregas seguras e eficientes, sempre alinhados aos valores de ética e confiança que fundamentam a nossa empresa.</p>
         </div>
         <div>
-            <a href="https://wa.me/5521989302715" class="botaowhats">FALE CONOSCO</a>
+            <a href="https://wa.me/5521974444790" class="botaowhats">FALE CONOSCO</a>
         </div>
     </div>
 
     <hr class="customhr">
 
-    <div class="servicos" data-aos="fade-down" data-aos-duration="1000">
+    <div class="servicos" data-aos="fade-down" data-aos-duration="1000" id="section2">
         <h1 class="titulo-servicos">NOSSOS SERVIÇOS</h1>
         <div class="container-card">
             <div class="card2 shadow" data-aos="fade-right" data-aos-duration="1000">
@@ -103,51 +104,46 @@
 
     <hr class="customhr">
 
-    <div class="servicos" data-aos="fade-up" data-aos-duration="1000">
+    <div class="servicos" data-aos="fade-up" data-aos-duration="1000" id="section3">
         <h1 class="titulo-servicos">PERGUNTAS FREQUENTES</h1>
         <div class="perguntas">
             <div class="border">
                 <button type="button" class="accordion-button">
-                    <h4 class="texto-perguntas">Primeiro Item</h4>
+                    <h4 class="texto-perguntas">Atendemos quais regiões?</h4>
                 </button>
                 <div class="accordion-content">
                     <p class="texto-perguntas">
-                        Lorem ipsum dolor sit amet consectetur
-                        adipisicing elit. Praesentium quidem
-                        adipisci eveniet iusto dolorum cumque
-                        quod atque? Sed doloremque iste beatae
-                        mollitia, ullam reiciendis eligendi
-                        praesentium maxime cumque quo impedit!
+                        Temos o prazer de atender em grande parte do estado do Rio de Janeiro, garantindo a você, nosso cliente, uma ampla cobertura e praticidade. Independentemente da sua localização, buscamos sempre levar nossos serviços de forma ágil e eficiente.
                     </p>
                 </div>
             </div>
             <div class="border">
                 <button type="button" class="accordion-button">
-                    <h4 class="texto-perguntas">Segundo Item</h4>
+                    <h4 class="texto-perguntas">Qual o horário de funcionamento?</h4>
                 </button>
                 <div class="accordion-content ">
                     <p class="texto-perguntas">
-                        Lorem ipsum dolor sit amet consectetur
-                        adipisicing elit. Praesentium quidem
-                        adipisci eveniet iusto dolorum cumque
-                        quod atque? Sed doloremque iste beatae
-                        mollitia, ullam reiciendis eligendi
-                        praesentium maxime cumque quo impedit!
+                        Nosso atendimento é realizado de segunda a sexta-feira, das 6h às 17h, oferecendo flexibilidade para que você possa contar conosco no horário mais conveniente para você.
                     </p>
                 </div>
             </div>
             <div class="border">
                 <button type="button" class="accordion-button">
-                    <h4 class="texto-perguntas">Terceiro Item</h4>
+                    <h4 class="texto-perguntas">Como faço um pedido?</h4>
                 </button>
                 <div class="accordion-content">
                     <p class="texto-perguntas">
-                        Lorem ipsum dolor sit amet consectetur
-                        adipisicing elit. Praesentium quidem
-                        adipisci eveniet iusto dolorum cumque
-                        quod atque? Sed doloremque iste beatae
-                        mollitia, ullam reiciendis eligendi
-                        praesentium maxime cumque quo impedit!
+                        Realizar um pedido conosco é fácil e rápido! Basta entrar em contato através do nosso WhatsApp. Nossa equipe está pronta para atender suas necessidades e garantir que você receba o que precisa de forma rápida e sem complicação.
+                    </p>
+                </div>
+            </div>
+            <div class="border">
+                <button type="button" class="accordion-button">
+                    <h4 class="texto-perguntas">Qual é o valor do frete?</h4>
+                </button>
+                <div class="accordion-content">
+                    <p class="texto-perguntas">
+                        Aqui, a sua satisfação é nossa prioridade. Por isso, oferecemos o serviço de entrega sem cobrança adicional de frete, proporcionando uma experiência mais tranquila e vantajosa para você.
                     </p>
                 </div>
             </div>
@@ -156,64 +152,334 @@
 
     <hr class="customhr">
 
-    <div class="produtos" data-aos="fade-up" data-aos-duration="1000">
+    <div class="produtos" data-aos="fade-up" data-aos-duration="1000" id="section4">
         <h1 class="titulo">PRODUTOS</h1>
-        <button class="btnfilter space" onclick="filtrarProdutos('todos')">Todos os Produtos</button>
-        <button class="btnfilter" onclick="filtrarProdutos('queijo')">Queijos</button>
-        <button class="btnfilter" onclick="filtrarProdutos('carne')">Carnes</button>
+        <button class="btnfilter" onclick="filtrarProdutos('todos')">Todos os Produtos</button>
+        <div class="dropdown">
+            <button class="btnfilter space" onclick="toggleDropdown()">Queijos</button>
+            <div id="dropdownMenu" class="dropdown-content">
+                <button class="btnfilter" onclick="filtrarProdutos('queijomussarela')">Queijo Mussarela</button>
+                <button class="btnfilter" onclick="filtrarProdutos('queijoparmessao')">Queijo Parmesão</button>
+                <button class="btnfilter" onclick="filtrarProdutos('queijobrie')">Queijo Brie</button>
+                <button class="btnfilter" onclick="filtrarProdutos('queijoazul')">Queijo Azul</button>
+                <button class="btnfilter" onclick="filtrarProdutos('queijominas')">Queijo Minas</button>
+                <button class="btnfilter" onclick="filtrarProdutos('queijoprato')">Queijo Prato</button>
+                <button class="btnfilter" onclick="filtrarProdutos('queijoprovolone')">Queijo Provolone</button>
+                <button class="btnfilter" onclick="filtrarProdutos('cheddar')">Cheddar</button>
+                <button class="btnfilter" onclick="filtrarProdutos('outrosqueijos')">Outros Tipos de Queijos</button>
+            </div>
+        </div>
+        <button class="btnfilter" onclick="filtrarProdutos('manteiga')">Manteiga</button>
+        <button class="btnfilter" onclick="filtrarProdutos('creamchesse')">Cream Cheese</button>
+        <button class="btnfilter" onclick="filtrarProdutos('requeijao')">Requeijão</button>
+        <button class="btnfilter" onclick="filtrarProdutos('presunto')">Presunto</button>
+        <button class="btnfilter" onclick="filtrarProdutos('peitodeperu')">Peito de Peru</button>
+        <button class="btnfilter" onclick="filtrarProdutos('mortadela')">Mortadela</button>
+        <button class="btnfilter" onclick="filtrarProdutos('pepperoni')">Pepperoni</button>
+        <button class="btnfilter" onclick="filtrarProdutos('cremedeleite')">Creme de Leite</button>
+        <button class="btnfilter" onclick="filtrarProdutos('iogurte')">Iogurte</button>
+        <button class="btnfilter" onclick="filtrarProdutos('salaminho')">Salaminho</button>
+        <button class="btnfilter" onclick="filtrarProdutos('peitodefrango')">Peito de Frango</button>
+        <button class="btnfilter" onclick="filtrarProdutos('lombo')">Lombo</button>
+        <button class="btnfilter" onclick="filtrarProdutos('massadefondue')">Massa de Fondue</button>
         <div class="container-card">
-            <div class="card" data-categoria="queijo">
-                <img class="imagem-produtos" src="Assets/queijobriesaovicente.png" alt="">
+            <div class="card" data-categoria="manteiga">
+                <img class="imagem-produtos" src="Assets/manteigacomsalcoyote.jpg" alt="">
                 <h2 class="descricao">QUEIJO BRIE SÃO VICENTE</h2>
                 <p class="descricao">Forma / Fracionado</p>
             </div>
-            <div class="card" data-categoria="queijo">
-                <img class="imagem-produtos" src="Assets/queijoazulsaovicente.png" alt="">
+            <div class="card" data-categoria="manteiga">
+                <img class="imagem-produtos" src="Assets/manteigasemsalcoyote.jpg" alt="">
                 <h2 class="descricao">QUEIJO AZUL SÃO VICENTE</h2>
                 <p class="descricao">Forma / Fracionado</p>
             </div>
-            <div class="card" data-categoria="queijo">
-                <img class="imagem-produtos" src="Assets/queijocamembertsaovicente.png" alt="">
+            <div class="card" data-categoria="massadefondue">
+                <img class="imagem-produtos" src="Assets/massadefonduesaovicente.jpg" alt="">
                 <h2 class="descricao">QUEIJO CAMEMBERT SÃO VICENTE</h2>
                 <p class="descricao"></p>
             </div>
-            <div class="card" data-categoria="queijo">
-                <img class="imagem-produtos" src="Assets/queijobrievaldifiemme.png" alt="">
+            <div class="card" data-categoria="queijobrie">
+                <img class="imagem-produtos" src="Assets/queijobrielejane.jpg" alt="">
                 <h2 class="descricao">QUEIJO BRIE VAL DI FIEMME</h2>
                 <p class="descricao">Forma / Fracionado</p>
             </div>
-            <div class="card" data-categoria="queijo">
-                <img class="imagem-produtos" src="Assets/queijobrielejane.png" alt="">
+            <div class="card" data-categoria="queijobrie">
+                <img class="imagem-produtos" src="Assets/queijobrievaldifiemme.jpg" alt="">
                 <h2 class="descricao">QUEIJO BRIE LEJANE</h2>
                 <p class="descricao">Forma / Fracionado</p>
             </div>
-            <div class="card" data-categoria="queijo">
-                <img class="imagem-produtos" src="Assets/chedarsaovicente.png" alt="">
+            <div class="card" data-categoria="outrosqueijos">
+                <img class="imagem-produtos" src="Assets/queijoementaltremminas.jpg" alt="">
                 <h2 class="descricao">CHEDAR SÃO VICENTE</h2>
                 <p class="descricao"></p>
             </div>
-            <div class="card" data-categoria="queijo">
-                <img class="imagem-produtos" src="Assets/massaparafoundue.png" alt="">
+            <div class="card" data-categoria="outrosqueijos">
+                <img class="imagem-produtos" src="Assets/queijogruyeretremminas.jpg" alt="">
                 <h2 class="descricao">MASSA PARA FONDUE PRONTA SÃO VICENTE</h2>
                 <p class="descricao"></p>
             </div>
-            <div class="card" data-categoria="queijo">
-                <img class="imagem-produtos" src="Assets/requeijaosaovicente.png" alt="">
+            <div class="card" data-categoria="queijominas">
+                <img class="imagem-produtos" src="Assets/queijominascaetes.jpg" alt="">
                 <h2 class="descricao">REQUEIJÃO BISNAGA SÃO VICENTE</h2>
                 <p class="descricao"></p>
             </div>
-            <div class="card" data-categoria="carne">
-                <img class="imagem-produtos" src="Assets/imagem.png" alt="">
+            <div class="card" data-categoria="queijominas">
+                <img class="imagem-produtos" src="Assets/queijominasdiviminas.jpg" alt="">
                 <h2 class="descricao">Carne1</h2>
                 <p class="descricao">Descrição</p>
             </div>
-            <div class="card">
-                <img class="imagem-produtos" src="Assets/imagem.png" alt="">
+            <div class="card" data-categoria="queijominas">
+                <img class="imagem-produtos" src="Assets/queijominasnazareno.jpg" alt="">
+                <h2 class="descricao">Nome</h2>
+                <p class="descricao">Descrição</p>
+            </div>
+            <div class="card" data-categoria="queijominas">
+                <img class="imagem-produtos" src="Assets/queijominasriquezademinas.jpg" alt="">
+                <h2 class="descricao">Nome</h2>
+                <p class="descricao">Descrição</p>
+            </div>
+            <div class="card" data-categoria="queijominas">
+                <img class="imagem-produtos" src="Assets/queijominassiritinga.jpg" alt="">
+                <h2 class="descricao">Nome</h2>
+                <p class="descricao">Descrição</p>
+            </div>
+            <div class="card" data-categoria="queijomussarela">
+                <img class="imagem-produtos" src="Assets/queijomussarelacoyote.jpg" alt="">
+                <h2 class="descricao">Nome</h2>
+                <p class="descricao">Descrição</p>
+            </div>
+            <div class="card" data-categoria="queijoparmessao">
+                <img class="imagem-produtos" src="Assets/queijoparmesaoriquezademinas.jpg" alt="">
+                <h2 class="descricao">Nome</h2>
+                <p class="descricao">Descrição</p>
+            </div>
+            <div class="card" data-categoria="queijoprato">
+                <img class="imagem-produtos" src="Assets/queijopratoriquezademinas.jpg" alt="">
+                <h2 class="descricao">Nome</h2>
+                <p class="descricao">Descrição</p>
+            </div>
+            <div class="card" data-categoria="queijoprovolone">
+                <img class="imagem-produtos" src="Assets/queijoprovoloneriquezademinas.jpg" alt="">
                 <h2 class="descricao">Nome</h2>
                 <p class="descricao">Descrição</p>
             </div>
             <div class="card">
-                <img class="imagem-produtos" src="Assets/imagem.png" alt="">
+                <img class="imagem-produtos" src="Assets/queijotremminasgouda.jpg" alt="">
+                <h2 class="descricao">Nome</h2>
+                <p class="descricao">Descrição</p>
+            </div>
+            <div class="card" data-categoria="requeijao">
+                <img class="imagem-produtos" src="Assets/requeijaocremososaovicente.jpg" alt="">
+                <h2 class="descricao">Nome</h2>
+                <p class="descricao">Descrição</p>
+            </div>
+            <div class="card" data-categoria="cheddar">
+                <img class="imagem-produtos" src="Assets/cheddarcatupiry.jpg" alt="">
+                <h2 class="descricao">Nome</h2>
+                <p class="descricao">Descrição</p>
+            </div>
+            <div class="card" data-categoria="cheddar">
+                <img class="imagem-produtos" src="Assets/cheddarcremososaovicente.jpg" alt="">
+                <h2 class="descricao">Nome</h2>
+                <p class="descricao">Descrição</p>
+            </div>
+            <div class="card" data-categoria="creamchesse">
+                <img class="imagem-produtos" src="Assets/creamchessecatupiry.jpg" alt="">
+                <h2 class="descricao">Nome</h2>
+                <p class="descricao">Descrição</p>
+            </div>
+            <div class="card" data-categoria="queijoazul">
+                <img class="imagem-produtos" src="Assets/queijoazulpaiolzinho.jpg" alt="">
+                <h2 class="descricao">Nome</h2>
+                <p class="descricao">Descrição</p>
+            </div>
+            <div class="card" data-categoria="queijoazul">
+                <img class="imagem-produtos" src="Assets/queijoazulsaovicente.jpg" alt="">
+                <h2 class="descricao">Nome</h2>
+                <p class="descricao">Descrição</p>
+            </div>
+            <div class="card" data-categoria="queijobrie">
+                <img class="imagem-produtos" src="Assets/queijobriesaovicente.jpg" alt="">
+                <h2 class="descricao">Nome</h2>
+                <p class="descricao">Descrição</p>
+            </div>
+            <div class="card" data-categoria="outrosqueijos">
+                <img class="imagem-produtos" src="Assets/queijocambertsaovicente.jpg" alt="">
+                <h2 class="descricao">Nome</h2>
+                <p class="descricao">Descrição</p>
+            </div>
+            <div class="card" data-categoria="outrosqueijos">
+                <img class="imagem-produtos" src="Assets/queijomontanhespaiolzinho.jpg" alt="">
+                <h2 class="descricao">Nome</h2>
+                <p class="descricao">Descrição</p>
+            </div>
+            <div class="card" data-categoria="requeijao">
+                <img class="imagem-produtos" src="Assets/requeijãocremosocatupiry.jpg" alt="">
+                <h2 class="descricao">Nome</h2>
+                <p class="descricao">Descrição</p>
+            </div>
+            <div class="card" data-categoria="queijoparmessao">
+                <img class="imagem-produtos" src="Assets/queijoparmesaolaserenissima.jpg" alt="">
+                <h2 class="descricao">Nome</h2>
+                <p class="descricao">Descrição</p>
+            </div>
+            <div class="card" data-categoria="presunto">
+                <img class="imagem-produtos" src="Assets/presuntorezende.jpg" alt="">
+                <h2 class="descricao">Nome</h2>
+                <p class="descricao">Descrição</p>
+            </div>
+            <div class="card" data-categoria="peitodeperu">
+                <img class="imagem-produtos" src="Assets/peitodeperurezende.jpg" alt="">
+                <h2 class="descricao">Nome</h2>
+                <p class="descricao">Descrição</p>
+            </div>
+            <div class="card" data-categoria="peitodeperu">
+                <img class="imagem-produtos" src="Assets/finessedeperuseara.jpg" alt="">
+                <h2 class="descricao">Nome</h2>
+                <p class="descricao">Descrição</p>
+            </div>
+            <div class="card" data-categoria="presunto">
+                <img class="imagem-produtos" src="Assets/presuntoseara.jpg" alt="">
+                <h2 class="descricao">Nome</h2>
+                <p class="descricao">Descrição</p>
+            </div>
+            <div class="card" data-categoria="mortadela">
+                <img class="imagem-produtos" src="Assets/mortadelaseara.jpg" alt="">
+                <h2 class="descricao">Nome</h2>
+                <p class="descricao">Descrição</p>
+            </div>
+            <div class="card" data-categoria="pepperoni">
+                <img class="imagem-produtos" src="Assets/pepperoniceratti.jpg" alt="">
+                <h2 class="descricao">Nome</h2>
+                <p class="descricao">Descrição</p>
+            </div>
+            <div class="card" data-categoria="requeijao">
+                <img class="imagem-produtos" src="Assets/requeijãocheddarpuranata.jpg" alt="">
+                <h2 class="descricao">Nome</h2>
+                <p class="descricao">Descrição</p>
+            </div>
+            <div class="card" data-categoria="requeijao">
+                <img class="imagem-produtos" src="Assets/requeijãopuranata.jpg" alt="">
+                <h2 class="descricao">Nome</h2>
+                <p class="descricao">Descrição</p>
+            </div>
+            <div class="card" data-categoria="requeijao">
+                <img class="imagem-produtos" src="Assets/requeijaobellapizza.jpg" alt="">
+                <h2 class="descricao">Nome</h2>
+                <p class="descricao">Descrição</p>
+            </div>
+            <div class="card" data-categoria="requeijao">
+                <img class="imagem-produtos" src="Assets/requeijaocheddarpolengui.jpg" alt="">
+                <h2 class="descricao">Nome</h2>
+                <p class="descricao">Descrição</p>
+            </div>
+            <div class="card" data-categoria="cheddar">
+                <img class="imagem-produtos" src="Assets/cheddarpolengui.jpg" alt="">
+                <h2 class="descricao">Nome</h2>
+                <p class="descricao">Descrição</p>
+            </div>
+            <div class="card" data-categoria="cheddar">
+                <img class="imagem-produtos" src="Assets/cheddarvigor.jpg" alt="">
+                <h2 class="descricao">Nome</h2>
+                <p class="descricao">Descrição</p>
+            </div>
+            <div class="card" data-categoria="creamchesse">
+                <img class="imagem-produtos" src="Assets/creamchessepolengui.jpg" alt="">
+                <h2 class="descricao">Nome</h2>
+                <p class="descricao">Descrição</p>
+            </div>
+            <div class="card" data-categoria="creamchesse">
+                <img class="imagem-produtos" src="Assets/creamchessedanubio.jpg" alt="">
+                <h2 class="descricao">Nome</h2>
+                <p class="descricao">Descrição</p>
+            </div>
+            <div class="card" data-categoria="cremedeleite">
+                <img class="imagem-produtos" src="Assets/cremedeleiteleco.jpg" alt="">
+                <h2 class="descricao">Nome</h2>
+                <p class="descricao">Descrição</p>
+            </div>
+            <div class="card" data-categoria="queijoprovolone">
+                <img class="imagem-produtos" src="Assets/queijoprovolonetania.jpg" alt="">
+                <h2 class="descricao">Nome</h2>
+                <p class="descricao">Descrição</p>
+            </div>
+            <div class="card" data-categoria="queijoparmessao">
+                <img class="imagem-produtos" src="Assets/queijoparmessaotania.jpg" alt="">
+                <h2 class="descricao">Nome</h2>
+                <p class="descricao">Descrição</p>
+            </div>
+            <div class="card" data-categoria="manteiga">
+                <img class="imagem-produtos" src="Assets/manteigacopodeleite.jpg" alt="">
+                <h2 class="descricao">Nome</h2>
+                <p class="descricao">Descrição</p>
+            </div>
+            <div class="card" data-categoria="queijoprato">
+                <img class="imagem-produtos" src="Assets/queijopratocopodeleite.jpg" alt="">
+                <h2 class="descricao">Nome</h2>
+                <p class="descricao">Descrição</p>
+            </div>
+            <div class="card" data-categoria="queijomussarela">
+                <img class="imagem-produtos" src="Assets/queijomussarelacopodeleite.jpg" alt="">
+                <h2 class="descricao">Nome</h2>
+                <p class="descricao">Descrição</p>
+            </div>
+            <div class="card" data-categoria="cremedeleite">
+                <img class="imagem-produtos" src="Assets/cremedeleitelarisol.jpg" alt="">
+                <h2 class="descricao">Nome</h2>
+                <p class="descricao">Descrição</p>
+            </div>
+            <div class="card" data-categoria="iogurte">
+                <img class="imagem-produtos" src="Assets/iogurtelarisol.jpg" alt="">
+                <h2 class="descricao">Nome</h2>
+                <p class="descricao">Descrição</p>
+            </div>
+            <div class="card" data-categoria="outrosqueijos">
+                <img class="imagem-produtos" src="Assets/queijocoalhosertanorte.jpg" alt="">
+                <h2 class="descricao">Nome</h2>
+                <p class="descricao">Descrição</p>
+            </div>
+            <div class="card" data-categoria="outrosqueijos">
+                <img class="imagem-produtos" src="Assets/queijogranparma.jpg" alt="">
+                <h2 class="descricao">Nome</h2>
+                <p class="descricao">Descrição</p>
+            </div>
+            <div class="card" data-categoria="presunto">
+                <img class="imagem-produtos" src="Assets/presuntogranparma.jpg" alt="">
+                <h2 class="descricao">Nome</h2>
+                <p class="descricao">Descrição</p>
+            </div>
+            <div class="card" data-categoria="mortadela">
+                <img class="imagem-produtos" src="Assets/mortadelaseara2.jpg" alt="">
+                <h2 class="descricao">Nome</h2>
+                <p class="descricao">Descrição</p>
+            </div>
+            <div class="card" data-categoria="salaminho">
+                <img class="imagem-produtos" src="Assets/salaminhoseara.jpg" alt="">
+                <h2 class="descricao">Nome</h2>
+                <p class="descricao">Descrição</p>
+            </div>
+            <div class="card" data-categoria="peitodefrango">
+                <img class="imagem-produtos" src="Assets/peitodefrangoseara.jpg" alt="">
+                <h2 class="descricao">Nome</h2>
+                <p class="descricao">Descrição</p>
+            </div>
+            <div class="card" data-categoria="lombo">
+                <img class="imagem-produtos" src="Assets/lomboseara.jpg" alt="">
+                <h2 class="descricao">Nome</h2>
+                <p class="descricao">Descrição</p>
+            </div>
+            <div class="card" data-categoria="peitodeperu">
+                <img class="imagem-produtos" src="Assets/peitodefrangoseara.jpg" alt="">
+                <h2 class="descricao">Nome</h2>
+                <p class="descricao">Descrição</p>
+            </div>
+            <div class="card" data-categoria="peitodeperu">
+                <img class="imagem-produtos" src="Assets/peitodeperuseara2.jpg" alt="">
+                <h2 class="descricao">Nome</h2>
+                <p class="descricao">Descrição</p>
+            </div>
+            <div class="card" data-categoria="presunto">
+                <img class="imagem-produtos" src="Assets/presuntorezende2.jpg" alt="">
                 <h2 class="descricao">Nome</h2>
                 <p class="descricao">Descrição</p>
             </div>
@@ -222,14 +488,13 @@
 
     <hr class="customhr">
 
-    <footer data-aos="fade-up" data-aos-delay="200">
+    <footer id="section5">
         <h1 class="titulo">CONTATO</h1>
         <div class="headline-contato">
             <div class="descricao-contato">
                 <ul class="lista-contato">
-                    <li><a href="#">WhatsApp: (55) 99999 - 9999</a></li>
-                    <li><a href="#">email@seuemail.com.br</a></li>
-                    <li><a href="#">Endereço Completo</a></li>
+                    <li><a href="#">WhatsApp: (21) 97444-4790 / (21) 99227-0086</a></li>
+                    <li>Email: srqueljoarruda@gmail.com</li>
                 </ul>
                 <div class="texto-contato">
                     <h2>ENTRE EM CONTATO</h2>
