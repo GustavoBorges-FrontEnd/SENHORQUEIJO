@@ -421,6 +421,10 @@ a{
     margin: 0.2rem 0;
 }
 
+.link{
+    text-decoration: underline;
+    color: rgb(124, 124, 24);
+}
 
 
    
