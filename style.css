@@ -158,13 +158,22 @@ a{
     transition: all 0.3s ease;
 }
 
-.navpc{
-    display: none;
+.navcel{
+    background-color: black;
+    color: white;
+    padding: 10px;
 }
 
-.navcel{
-    display: inline-block;
+.navcel a{
     color: white;
+    text-decoration: none;
+    padding: 10px;
+    transition-duration: 0.5s;
+}
+
+nav a:hover{
+    background-color: white;
+    color: black;
 }
 
 /* --------------SWIPER ------------------*/
@@ -433,16 +442,6 @@ a{
 .link{
     text-decoration: underline;
     color: rgb(124, 124, 24);
-}
-
-.navpc{
-    display: flex;
-    flex-direction: row;
-    gap: 15px;
-}
-
-.navcel{
-    display: none;
 }
 
 
