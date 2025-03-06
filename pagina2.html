@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Senhor Queijo</title>
+    <link rel="icon" href="Aha-Soft-Desktop-Buffet-Cheese.256.png" type="image/x-icon">
+    <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+</head>
+
+<body>
+    <header class="nav">
+        <div class="logo">
+            <img class="imglogo" src="Assets/senhorqueijo.jpg" alt="">
+            SENHOR QUEIJO
+        </div>
+        <div class="menu">
+            <label class="hamburger">
+                <input type="checkbox" id="menuToggle">
+                <svg viewBox="0 0 32 32">
+                    <path class="line line-top-bottom"
+                        d="M27 10 13 10C10.8 10 9 8.2 9 6 9 3.5 10.8 2 13 2 15.2 2 17 3.8 17 6L17 26C17 28.2 18.8 30 21 30 23.2 30 25 28.2 25 26 25 23.8 23.2 22 21 22L7 22">
+                    </path>
+                    <path class="line" d="M7 16 27 16"></path>
+                </svg>
+            </label>
+        </div>
+        <div class="menu-aberto">
+            <nav class="nav-menu hidden" id="menu">
+                <a href="index.html">VOLTAR PARA PÁGINA INICIAL</a>
+                <a href="#contato">CONTATO</a>
+            </nav>
+        </div>
+    </header>
+    <hr class="customhr">
+    <nav class="navcel">
+        <a href="index.html">PÁGINA INICIAL</a>
+        <a href="pagina3.html">MJ DE MORAES</a>
+        <a href="pagina4.html">NONNO FOODS</a>
+    </nav>
+    <div class="grid-container">
+        <div class="swiper mySwiper" id="section1">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="Assets2/swipper1.jpg" alt="">
+              </div>
+              <div class="swiper-slide">
+                <img src="Assets2/swipper2.jpg" alt="">
+              </div>
+              <div class="swiper-slide">
+                <img src="Assets2/swipper3.jpg"">
+              </div>
+              <div class="swiper-slide">
+                <img src="Assets2/swipper4.jpg" alt="">
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+        <div class="Sobre" data-aos="fade-left" data-aos-duration="1000">
+            <div class="texto-sobre">
+                <div>
+                    <h1>VITALATTE,</h1>
+                    <h2>LATICÍNIOS PARA TODOS OS GOSTOS.</h2>
+                </div>
+                <p>Na Vitalatte, acreditamos que a verdadeira nutrição começa com a qualidade dos ingredientes. Desde a nossa fundação, temos como missão levar aos nossos clientes produtos lácteos frescos, saborosos e nutritivos, com a garantia de um processo de produção responsável e sustentável.</p>
+                <p class="paragrafosegundo">Com um portfólio diversificado de leites, queijos e derivados, <strong>a Vitalatte se destaca por seu compromisso em oferecer alimentos que não só satisfazem, mas também promovem o bem-estar.</strong> Cada produto é elaborado com as melhores matérias-primas e rigorosos controles de qualidade, para garantir que você e sua família possam desfrutar do melhor da natureza, com toda a confiança.</p>
+            </div>
+            <div>
+                <a href="https://wa.me/5521974444790" class="botaowhats">FALE CONOSCO</a>
+            </div>
+        </div>
+    </div>
+    <hr class="customhr">
+    <div class="cel">
+        <h1 id="produtos" class="titulo">PRODUTOS</h1>
+        <button class="btnfilter" onclick="scrollToDiv('div1')">Vitalatte</button>
+        <button class="btnfilter" onclick="scrollToDiv('div2')">Yorgus</button>
+        <button class="btnfilter" onclick="scrollToDiv('div3')">Kefir Reggula</button>
+        <div class="swiper-slide">
+            <div id="div1">
+                <h2 class="subtitulo">VITALATTE</h2>
+                <p class="texto">A Vitalatte é uma empresa brasileira especializada na produção de queijos artesanais de inspiração italiana. Localizada em Valença, no estado do Rio de Janeiro, a Vitalatte utiliza leite de vacas e búfalas alimentadas a pasto em fazendas locais para elaborar seus produtos.</p>
+            </div>
+            <img data-aos="zoom-in" data-aos-duration="1000" src="Assets2/um.png" alt="">
+            <img data-aos="zoom-in" data-aos-duration="1000" src="Assets2/dois.png" alt="">
+            <img data-aos="zoom-in" data-aos-duration="1000" src="Assets2/tres.png" alt="">
+            <img data-aos="zoom-in" data-aos-duration="1000" src="Assets2/quatro.png" alt="">
+            <div id="div2">
+                <h2 class="subtitulo">YORGUS</h2>
+                <p class="texto">O Yorgus é uma marca brasileira especializada na produção de iogurtes premium, elaborados com leite de alta qualidade. O produto destaca-se pelo uso de métodos tradicionais de produção e pela presença de culturas probióticas, que são benéficas para a saúde intestinal.
+
+                    A linha Yorgus oferece uma variedade de iogurtes, incluindo opções com diferentes sabores, como natural, morango e outros. Ele é caracterizado por ser mais cremoso e com um sabor mais suave em comparação aos iogurtes convencionais, devido ao processo de fermentação lento, que preserva as qualidades nutricionais do leite.</p>
+            </div>
+            <img data-aos="zoom-in" data-aos-duration="1000" src="Assets2/cinco.png" alt="">
+            <img data-aos="zoom-in" data-aos-duration="1000" src="Assets2/seis.png" alt="">
+            <img data-aos="zoom-in" data-aos-duration="1000" src="Assets2/sete.png" alt="">
+            <img data-aos="zoom-in" data-aos-duration="1000" src="Assets2/oito.png" alt="">
+            <img data-aos="zoom-in" data-aos-duration="1000" src="Assets2/nove.png" alt="">
+            <img data-aos="zoom-in" data-aos-duration="1000" src="Assets2/5.png" alt="">
+            <img data-aos="zoom-in" data-aos-duration="1000" src="Assets2/6.png" alt="">
+            <img data-aos="zoom-in" data-aos-duration="1000" src="Assets2/7.png" alt="">
+            <img data-aos="zoom-in" data-aos-duration="1000" src="Assets2/8.png" alt="">
+            <img data-aos="zoom-in" data-aos-duration="1000" src="Assets2/9.png" alt="">
+            <img data-aos="zoom-in" data-aos-duration="1000" src="Assets2/10.png" alt="">
+            <img data-aos="zoom-in" data-aos-duration="1000" src="Assets2/11.png" alt="">
+            <img data-aos="zoom-in" data-aos-duration="1000" src="Assets2/12.png" alt="">
+            <img data-aos="zoom-in" data-aos-duration="1000" src="Assets2/13.png" alt="">
+            <img data-aos="zoom-in" data-aos-duration="1000" src="Assets2/15.png" alt="">
+            <div id="div3">
+                <h2 class="subtitulo">KEFIR REGGULA</h2>
+                <p class="texto">O Kefir Reggula é uma bebida láctea fermentada que se destaca por sua composição probiótica e benefícios à saúde intestinal. Produzido com leite de alta qualidade, o Kefir Reggula contém 15 cepas probióticas diferentes e passa por uma fermentação mais lenta em comparação aos iogurtes convencionais, resultando em um produto mais funcional e saboroso.</p>
+            </div>
+            <img data-aos="zoom-in" data-aos-duration="1000" src="Assets2/16.png" alt="">
+            <img data-aos="zoom-in" data-aos-duration="1000" src="Assets2/17.png" alt="">
+
+        </div>
+    </div>
+    <div class="pc">
+        <h1 class="titulo">PRODUTOS</h1>
+        <button class="btnfilter" onclick="scrollToDiv('div4')">Vitalatte</button>
+        <button class="btnfilter" onclick="scrollToDiv('div5')">Yorgus</button>
+        <button class="btnfilter" onclick="scrollToDiv('div6')">Kefir Reggula</button>
+        <div class="swiper-slide">
+            <div id="div4">
+                <h2 class="subtitulo">VITALATTE</h2>
+                <p class="texto">A Vitalatte é uma empresa brasileira especializada na produção de queijos artesanais de inspiração italiana. Localizada em Valença, no estado do Rio de Janeiro, a Vitalatte utiliza leite de vacas e búfalas alimentadas a pasto em fazendas locais para elaborar seus produtos.</p>
+            </div>
+            <img data-aos="zoom-in" data-aos-duration="1000" src="Assets2/um.png" alt="">
+            <img data-aos="zoom-in" data-aos-duration="1000" src="Assets2/dois.png" alt="">
+            <img data-aos="zoom-in" data-aos-duration="1000" src="Assets2/tres.png" alt="">
+            <img data-aos="zoom-in" data-aos-duration="1000" src="Assets2/quatro.png" alt="">
+            <div id="div5">
+                <h2 class="subtitulo">YORGUS</h2>
+                <p class="texto">O Yorgus é uma marca brasileira especializada na produção de iogurtes premium, elaborados com leite de alta qualidade. O produto destaca-se pelo uso de métodos tradicionais de produção e pela presença de culturas probióticas, que são benéficas para a saúde intestinal.
+
+                    A linha Yorgus oferece uma variedade de iogurtes, incluindo opções com diferentes sabores, como natural, morango e outros. Ele é caracterizado por ser mais cremoso e com um sabor mais suave em comparação aos iogurtes convencionais, devido ao processo de fermentação lento, que preserva as qualidades nutricionais do leite.</p>
+            </div>
+            <img data-aos="zoom-in" data-aos-duration="1000" src="Assets2/3.png" alt="">
+            <img data-aos="zoom-in" data-aos-duration="1000" src="Assets2/4.png" alt="">
+            <img data-aos="zoom-in" data-aos-duration="1000" src="Assets2/5.png" alt="">
+            <img data-aos="zoom-in" data-aos-duration="1000" src="Assets2/6.png" alt="">
+            <img data-aos="zoom-in" data-aos-duration="1000" src="Assets2/7.png" alt="">
+            <img data-aos="zoom-in" data-aos-duration="1000" src="Assets2/8.png" alt="">
+            <img data-aos="zoom-in" data-aos-duration="1000" src="Assets2/9.png" alt="">
+            <img data-aos="zoom-in" data-aos-duration="1000" src="Assets2/10.png" alt="">
+            <img data-aos="zoom-in" data-aos-duration="1000" src="Assets2/11.png" alt="">
+            <img data-aos="zoom-in" data-aos-duration="1000" src="Assets2/12.png" alt="">
+            <img data-aos="zoom-in" data-aos-duration="1000" src="Assets2/13.png" alt="">
+            <img data-aos="zoom-in" data-aos-duration="1000" src="Assets2/15.png" alt="">
+            <div id="div6">
+                <h2 class="subtitulo">KEFIR REGGULA</h2>
+                <p class="texto">O Kefir Reggula é uma bebida láctea fermentada que se destaca por sua composição probiótica e benefícios à saúde intestinal. Produzido com leite de alta qualidade, o Kefir Reggula contém 15 cepas probióticas diferentes e passa por uma fermentação mais lenta em comparação aos iogurtes convencionais, resultando em um produto mais funcional e saboroso.</p>
+            </div>
+            <img data-aos="zoom-in" data-aos-duration="1000" src="Assets2/16.png" alt="">
+            <img data-aos="zoom-in" data-aos-duration="1000" src="Assets2/17.png" alt="">
+        </div>
+    </div>        
+    <footer id="contato">
+        <h1 class="titulo">CONTATO</h1>
+        <div class="headline-contato">
+            <div class="descricao-contato">
+                <ul class="lista-contato">
+                    <li><a href="#">WhatsApp: (21) 97444-4790 / (21) 99227-0086</a></li>
+                    <li>Email: srqueljoarruda@gmail.com</li>
+                </ul>
+                <div class="texto-contato">
+                    <h2>ENTRE EM CONTATO</h2>
+                    <p>Se tiver dúvidas, sugestões ou precisar de mais informações sobre nossos serviços e produtos, nossa equipe está pronta para atender você.</p>
+                </div>
+            </div>
+        </div> 
+        <div class="footer-column credits-column" >
+            <p>&copy; 2025 Todos os direitos reservados.</p>
+            <p>Desenvolvido por <a class="link" href="https://www.instagram.com/nexus.web_design?igsh=MWNqdW1saGplYmU0dA%3D%3D&utm_source=qr">Nexus Web Design</a>.</p>
+            <br>
+        </div>          
+    </footer>
+
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    
+        
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="js/swiper.js"></script>
+    <script src="js/filter2.js"></script>
+    <script src="js/menu.js"></script>
+</body>
+</html>

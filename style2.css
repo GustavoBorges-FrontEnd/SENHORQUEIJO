@@ -30,6 +30,10 @@ h2{
     color: #f0b45c;
 }
 
+p{
+    text-align: justify;
+}
+
 a{
     text-decoration: none;
     color: white;
@@ -183,37 +187,6 @@ nav a:hover{
     color: black;
 }
 
-/* --------------SWIPER ------------------*/
-
-.grid-container {
-    display: grid;
-    grid-template-columns: 1fr; /* 1 coluna de 100% para dispositivos móveis */
-    grid-template-rows: repeat(2, 1fr); /* 4 linhas de 25% cada */
-    height: 100vh; /* Ajuste a altura conforme necessário */
-}
-
-.swiper {
-    width: 100%; /* 100% da coluna do grid */
-    height: 100%; /* 100% da linha do grid */
-}
-
-.swiper-slide {
-    text-align: center;
-    font-size: 18px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.swiper-slide img {
-    display: block;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-/* --------------- SOBRE ------------------*/
-
 .Sobre{
     margin: 0.8rem;
     padding-bottom: 1rem;
@@ -250,126 +223,49 @@ nav a:hover{
     width: 333px;
 }
 
-/* -----------------SERVIÇOS ---------------------*/
-
-.titulo-servicos{
-    padding-left: 0.9rem;
-    padding-top: 1rem;
-    color: white;
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr; /* 1 coluna de 100% para dispositivos móveis */
+    grid-template-rows: repeat(2, 1fr); /* 4 linhas de 25% cada */
+    height: 100vh; /* Ajuste a altura conforme necessário */
 }
 
-.tituloservicoscard{
-    font-weight: 500;
+.swiper {
+    width: 100%; /* 100% da coluna do grid */
+    height: 100%; /* 100% da linha do grid */
 }
 
-.textoservicos{
-    font-weight: 300;
-}
-
-.card2 {
-    width: 300px;
-    height: 170px;
-    padding: 1rem;
-    border-radius: 20%;
-    background: white;
-    color: black;
-    border-radius: 2px;
-    transition: border-radius 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-}
-   
-/*.shadow {
-    box-shadow: inset 0 -3em 3em rgba(0,0,0,0.1),
-                0 0  0 2px rgb(190, 190, 190),
-                0.3em 0.3em 1em rgba(0,0,0,0.3);
-}
-
-/* --------------PERGUNTAS FREQUENTES ----------------*/
-
-.perguntas {
-    padding: 1rem;
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
     display: flex;
-    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    gap: 1rem;
 }
-  
-.border {
-    border-radius: 5px;
-    border: 1px solid white;
-    padding: 1rem;
-    background-color: black;
-    width: 333px;
-} 
 
-.texto-perguntas{
-    cursor: pointer;
-    font-family: "Montserrat", serif;
-    font-weight: 300;
-    color: white;
-}
-    
-.accordion-button {
-    background-color: black;
+.swiper-slide img {
     display: block;
-    border: none;
-    width: 300px;
-    height: 25px;
-    transition: border-radius 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-}
-  
-.accordion-content {
-    overflow: hidden;
-    -webkit-transition: 1s ease;
-    transition: 1s ease;
-}
-
-/* ---------------PRODUTOS --------------*/
-
-.dropdown {
-    position: relative;
-    display: inline-block;
-}
-
-.dropdown-content {
-    display: none; /* Esconde o menu por padrão */
-    position: absolute;
-    background-color: #f9f9f9;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-}
-
-.dropdown-content button {
-    color: black;
-    padding: 12px 16px;
-    text-align: left;
-    border: none;
-    background: none;
     width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
-.dropdown-content button:hover {
-    background-color: #f1f1f1;
-}
-
-.show {
-    display: block; /* Mostra o menu quando a classe 'show' é adicionada */
+.pc{
+    display: none;
 }
 
 .titulo{
-    padding-left: 1.1rem;
+    text-align: left;
+    padding-left: 1rem;
     padding-top: 1rem;
-    color: white;
 }
 
-.container-card{
-    margin-top: 1.5rem;
-    padding-bottom: 1.5rem;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 2rem;
-    letter-spacing: 0px;
+.subtitulo{
+    margin-top: 1rem;
+}
+
+.texto{
+    margin: 1rem;
 }
 
 .btnfilter{
@@ -379,64 +275,14 @@ nav a:hover{
     color: white;
     padding: 0.7rem;
     border-radius: 20px;
+    cursor: pointer;
 }
 
-.space{
-    margin-left: 1rem;
+.filter{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
 }
-
-.card {
-    width: 300px;
-    height: 300px;
-    border-radius: 2px;
-    background: rgb(94, 94, 94);
-}
-
-.imagem-produtos{
-    border-radius: 2px 2px 0px 0px;
-    width: 300px;
-    height: 190px;
-}
-
-.descricao{
-    font-family: "Montserrat", serif;
-    font-weight: 300;
-    font-size: 20px;
-    letter-spacing: 0px;
-    padding-left: 0.5rem;
-    padding-bottom: 1rem;
-    color: white;
-}
-
-
-
-@media (min-width: 1024px) {
-
-    .grid-container{
-        display: grid;
-        grid-template-columns: repeat(2, 1fr); /* 2 colunas de 50% cada */
-        grid-template-rows: repeat(2, 1fr); /* 2 linhas de 50% cada */
-        height: 70vh; /* Ajuste a altura conforme necessário */
-        margin: 1rem;
-        gap: 10px;
-    }
-
-    .swiper {
-        border-radius: 10px;
-        width: 100%;
-        height: 100%;
-    }
-
-    .nav{
-        margin: 0.3rem;
-    }
-
-    .logo{
-        padding-left: 1rem;
-    }
-}
-
-/* --------------- CONTATO --------------*/
 
 .headline-contato {
     padding-left: 3rem;
@@ -473,6 +319,27 @@ nav a:hover{
     color: rgb(124, 124, 24);
 }
 
+@media (min-width: 1024px) {
+    .grid-container{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); /* 2 colunas de 50% cada */
+        grid-template-rows: repeat(2, 1fr); /* 2 linhas de 50% cada */
+        height: 70vh; /* Ajuste a altura conforme necessário */
+        margin: 1rem;
+        gap: 10px;
+    }
 
-   
-   
+    .swiper {
+        border-radius: 10px;
+        width: 100%;
+        height: 100%;
+    }
+
+    .pc{
+        display: block;
+    }
+
+    .cel{
+        display: none;
+    }
+}    
